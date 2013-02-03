@@ -26,7 +26,7 @@ def binom(n, k, modular):
 		numer = (numer * (n-i)) % modular
 	for i in range(1, k+1):
 		denom = (denom * i) % modular
-	return (numer * mod_inverse(denom, modular)) % modular
+	return (numer * mod_inverse(denom, modular))
 
 def mod_inverse(a, modular):
 	return pow(a, modular-2, modular)
