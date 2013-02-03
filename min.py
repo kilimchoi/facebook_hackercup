@@ -1,6 +1,6 @@
 import collections
 import os, sys
-
+#correct solution
 def next(ary, start):
     j = start
     l = len(ary)
