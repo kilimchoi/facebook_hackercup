@@ -1,3 +1,4 @@
+#inefficient but correct solution
 import string
 def compute_beauty(input):
 	dict = {}
