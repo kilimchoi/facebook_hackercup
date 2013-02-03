@@ -5,7 +5,7 @@ import math
 #we have to create a subset of size k from a set of size n. 
 #If a[i] is the largest element in the subset then we know k-1 other elements in the subset has to be chosen from a[0] to a[i-1]. 
 #This tells us that we simply have to multiply a[i] by i choose k - 1. Binomial Coefficient takes care of this. As the numbers get larger, it's efficient to do modulo 1,000,000,007. 
-#But when we do the division, a/b mod p does not equal a mod p / b mod p. But observe that our modulus is prime, so we can use Euclidean Theorem here to calculate modular multiplicative inverse. 
+#But when we do the division, a/b mod p does not equal a mod p / b mod p. But observe that our modulus is prime, so we can use Euler's Theorem here to calculate modular multiplicative inverse. 
 #So, it would just be pow(a, modulus - 2, modulus) for denominator part of binomial coefficient. 
 
 def strength(arr, n, k):
