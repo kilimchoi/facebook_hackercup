@@ -1,7 +1,7 @@
 import itertools
 import math
 
-#Basic observation for Facebook hacker cup solution for card game 
+#Basic observation for Facebook hacker cup solution for the card game 
 #we have to create a subset of size k from a set of size n. 
 #If a[i] is the largest element in the subset then we know k-1 other elements in the subset has to be chosen from a[0] to a[i-1]. 
 #This tells us that we simply have to multiply a[i] by i choose k - 1. Binomial Coefficient takes care of this. As the numbers get larger, it's efficient to do modulo 1,000,000,007. 
