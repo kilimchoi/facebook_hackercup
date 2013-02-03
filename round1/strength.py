@@ -1,8 +1,6 @@
 import itertools
 import math
-#Result will be a[0]*(n-1)C(k-1) + a[1]*(n-2)C(k-1).. till n=k 
-#Here problem is with large numbers, so we use binomial with modulus and reduce the number 
-#by computing the remainder at every step, to make sure we avoid handling large numbers
+
 def strength(arr, n, k):
 	arr = sorted(arr)
 	result = 0
